@@ -5,9 +5,9 @@ function Home() {
    
   return (
     <div className='home'>
-    
+        <p>Login to start the quiz</p>
       <button className="btn">
-       <Link to="/countdown">Start</Link>
+       <Link to="/sign-up">Login</Link>
       </button>
  
     </div>

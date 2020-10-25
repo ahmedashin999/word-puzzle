@@ -1,8 +1,7 @@
 import React from 'react'
 import Countdown from 'react-countdown';
 import Quiz from './Quiz';
- 
-
+import countdown from './music/countdown.mp3'
  
 import './countdown.css'
 function CountDown() {
@@ -20,7 +19,9 @@ function CountDown() {
           renderer={renderer}
        > 
        
-             
+             <audio controls>
+                 <source src={countdown} type="audio/mp3"></source>
+                 </audio>
              
            </Countdown>
             

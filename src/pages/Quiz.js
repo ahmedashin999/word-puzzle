@@ -2,6 +2,7 @@ import React from 'react'
 import './quiz.css'
 import {BsFillForwardFill} from 'react-icons/bs';
 import ProgressBar from './ProgressBar'
+import firebase from 'firebase'
 function Quiz() {
 
     const quizData=[
@@ -22,11 +23,11 @@ function Quiz() {
    ))}
            
              <div className="input-content">
-                 <input type="text"/>
-                 <input type="text"/>
-                 <input type="text"/>
-                 <input type="text"/>
-                 <input type="text"/>
+                 <div className="ans-input"></div>
+                 <div className="ans-input"></div>
+                 <div className="ans-input"></div>
+                 <div className="ans-input"></div>
+                 <div className="ans-input"></div>
              </div>
              <div className="ques-input-content">
                  <button>A</button>
@@ -40,6 +41,7 @@ function Quiz() {
              <button className="btn-icon">
                  <BsFillForwardFill/>
              </button>
+             <button className="sign-out" onClick={()=>firebase.auth().signOut()}>Sign Out</button>
         </div>
         </div>
     )

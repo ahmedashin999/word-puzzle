@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Quiz from './pages/Quiz'
 import CountDown from './pages/CountDown'
- 
+ import SignUp from './pages/SignUp'
 
 function App() {
   return (
@@ -16,6 +16,8 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path="/countdown" component={CountDown}/>
           <Route path="/quiz1" component={Quiz}/>
+          {/* <Route path="/login" component={Login}/> */}
+          <Route path="/sign-up" component={SignUp}/>
         </Switch>
       </Router>
     </>

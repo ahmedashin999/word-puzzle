@@ -29,6 +29,12 @@
     width:150px;
     margin-top: 20px;
 }
+.ans-input{
+    width:40px;
+    height:40px;
+    background: #efcded ;
+    border-radius: 5px;
+}
 button{
     width:40px;
     height:40px;
@@ -37,6 +43,7 @@ button{
     background-color: #efcded;
     outline:none;
     cursor:pointer;
+    margin-right:5px;
 }
 input{
     width:40px;
@@ -45,6 +52,10 @@ input{
     border:none;
     background-color: #efcded;
     outline:none;
+}
+.sign-out{
+    width:100px;
+    margin-bottom: -20px;
 }
 .ques-input-content{
     margin:auto;
